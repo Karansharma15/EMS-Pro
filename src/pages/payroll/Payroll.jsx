@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  DollarSign, FileText, Plus, Download, Printer, 
+  IndianRupee, FileText, Plus, Download, Printer, 
   Calendar, CheckCircle, TrendingUp, ShieldCheck, Building2 
 } from 'lucide-react';
 import usePayrollStore from '../../store/payrollStore';
@@ -195,7 +195,7 @@ const Payroll = () => {
             <p className="text-2xl font-bold text-slate-800">{formatCurrency(totalPaidOut)}</p>
           </div>
           <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl">
-            <DollarSign className="w-6 h-6" />
+            <IndianRupee className="w-6 h-6" />
           </div>
         </div>
 
@@ -265,7 +265,7 @@ const Payroll = () => {
               onChange={(e) => setMonth(e.target.value)}
             />
             <Input
-              label="Basic Salary ($)"
+              label="Basic Salary (₹)"
               type="number"
               required
               value={basicSalary}
@@ -275,13 +275,13 @@ const Payroll = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <Input
-              label="Bonus / Incentive ($)"
+              label="Bonus / Incentive (₹)"
               type="number"
               value={bonus}
               onChange={(e) => setBonus(e.target.value)}
             />
             <div className="pt-6 text-xs text-slate-500">
-              HRA (20%), Transport ($500), Medical ($300), Tax (10%), PF (12%) auto-computed.
+              HRA (20%), Transport (₹2500), Medical (₹3000), Tax (10%), PF (12%) auto-computed.
             </div>
           </div>
         </form>
@@ -319,9 +319,9 @@ const Payroll = () => {
                   <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xs">
                     EMS
                   </div>
-                  <h2 className="text-xl font-bold text-slate-800">Enterprise Systems Corp</h2>
+                  <h2 className="text-xl font-bold text-slate-800">Skyline Business Solutions Pvt. Ltd.</h2>
                 </div>
-                <p className="text-xs text-slate-400 mt-1">100 Tech Park Way, Silicon Valley, CA</p>
+                <p className="text-xs text-slate-400 mt-1">Office No. 402, 4th Floor, Tower B, Sector 62, Noida, Uttar Pradesh – 201309, India.</p>
               </div>
               <div className="text-right">
                 <span className="px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded font-semibold text-xs uppercase tracking-wider">

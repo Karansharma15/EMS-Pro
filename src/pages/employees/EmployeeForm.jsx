@@ -144,7 +144,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
           <Input
             label="Full Name"
             required
-            placeholder="e.g. John Doe"
+            placeholder="e.g. Akash Sharma"
             error={errors.name?.message}
             {...register('name', { required: 'Full name is required' })}
           />
@@ -152,7 +152,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
             label="Work Email"
             type="email"
             required
-            placeholder="e.g. john@company.com"
+            placeholder="e.g. akash@company.com"
             error={errors.email?.message}
             {...register('email', { 
               required: 'Email is required',
@@ -165,7 +165,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
           <Input
             label="Phone Number"
             required
-            placeholder="+1-555-0100"
+            placeholder="+91-9896600458"
             error={errors.phone?.message}
             {...register('phone', { required: 'Phone is required' })}
           />
@@ -207,7 +207,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
             {...register('employmentType')}
           />
           <Input
-            label="Annual Salary ($)"
+            label="Annual Salary (₹)"
             type="number"
             required
             placeholder="75000"
@@ -232,7 +232,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Input
               label="Contact Name"
-              placeholder="e.g. Mary Doe"
+              placeholder="e.g. Priya Sharma"
               {...register('emergencyName')}
             />
             <Input
@@ -242,7 +242,7 @@ const EmployeeForm = ({ open, onClose, employee = null }) => {
             />
             <Input
               label="Contact Phone"
-              placeholder="+1-555-0199"
+              placeholder="+91-9896600458"
               {...register('emergencyPhone')}
             />
           </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard, Users, Building2, Clock, CalendarDays,
-  DollarSign, CheckSquare, TrendingUp, Settings, LogOut,
+  IndianRupee, CheckSquare, TrendingUp, Settings, LogOut,
   ChevronLeft, ChevronRight, Briefcase, Bell
 } from 'lucide-react';
 import { cn } from '../../utils/helpers';
@@ -16,7 +16,7 @@ const navItems = [
   { label: 'Departments', icon: Building2, path: '/departments', roles: ['Admin'] },
   { label: 'Attendance', icon: Clock, path: '/attendance', roles: ['Admin', 'HR', 'Employee'] },
   { label: 'Leave Management', icon: CalendarDays, path: '/leaves', roles: ['Admin', 'HR', 'Employee'] },
-  { label: 'Payroll', icon: DollarSign, path: '/payroll', roles: ['Admin', 'HR', 'Employee'] },
+  { label: 'Payroll', icon: IndianRupee, path: '/payroll', roles: ['Admin', 'HR', 'Employee'] },
   { label: 'Tasks', icon: CheckSquare, path: '/tasks', roles: ['Admin', 'HR', 'Employee'] },
   { label: 'Performance', icon: TrendingUp, path: '/performance', roles: ['Admin', 'HR', 'Employee'] },
   { label: 'Settings', icon: Settings, path: '/settings', roles: ['Admin', 'HR', 'Employee'] },
