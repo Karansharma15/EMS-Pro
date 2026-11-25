@@ -3,20 +3,6 @@
 A modern, role-based Employee Management System built with **Vite**, **React 18**, and **Tailwind CSS**.
 
 ---
-
-## 🚀 Quick Start
-
-To run the development server locally:
-
-```bash
-cd "C:\Users\ACER\.gemini\antigravity\scratch\employee-management-system"
-npm run dev
-```
-
-Visit `http://localhost:5173` in your browser.
-
----
-
 ## 🔑 Demo Login Credentials
 
 The system comes pre-loaded with comprehensive seed data across all roles. Click on any demo account on the login page or enter:
